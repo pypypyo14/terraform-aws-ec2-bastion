@@ -7,7 +7,7 @@ variable "key_name" {
 }
 
 variable "vpc_id" {
-  description = "usually module.basic-networks.public_subnets_id[0]"
+  description = "usually module.basic-networks.vpc_id"
 }
 variable "subnet_id" {
   description = "usually module.basic-networks.public_subnets_id[0]"
