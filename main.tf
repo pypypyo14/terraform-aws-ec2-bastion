@@ -30,7 +30,8 @@ resource "aws_instance" "bastion" {
 }
 
 resource "aws_security_group" "bastion" {
-  name = "${var.project}_terraform_bastion_sg"
+  name   = "${var.project}_terraform_bastion_sg"
+  vpc_id = var.vpc_id
   tags = {
     Name = "allow_all"
   }
